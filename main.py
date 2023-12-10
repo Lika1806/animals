@@ -11,6 +11,7 @@ def print_info(instance, *methods):
     if not methods:
         print("he can't do anything")
         return
+    print("he can ")
     for method in methods:
         foo = getattr(instance, method)
         if len(inspect.signature(foo).parameters) == 0:
